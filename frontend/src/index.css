@@ -1,0 +1,30 @@
+:root {
+  /* Светлая тема (по умолчанию) */
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --button-background: #f0f0f0;
+  --button-text-color: #000000;
+}
+
+[data-theme="dark"] {
+  /* Тёмная тема */
+  --background-color: #333333;
+  --text-color: #ffffff;
+  --button-background: #555555;
+  --button-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
